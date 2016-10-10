@@ -7,8 +7,8 @@ This document describes the technical approach to implementing the release proce
 
 ### Goals
 1.  It should be clear to the user which version of Spinnaker they’re currently using, installing or configuring.
-2. If a user want to install/configure/update sub-components it should be clear which set of components are correspond to the same release.
-3. User should be able to easily rollback to previous version for all sub-components
+2. If a user wants to install/configure/update sub-components it should be clear which set of components correspond to the same release.
+3. User should be able to easily rollback to previous version for all sub-components.
 4. The user should have a high degree of confidence that upgrading will succeed and their Spinnaker system will continue working as expected.
 5. It should be easy to add patch fixes to any official release of Spinnaker within the period specified by the release documentation.
 
@@ -31,7 +31,7 @@ The build process, which runs at the specified period by the release document, w
 
 # Packaging & Building
 
-The automated will be responsible for kicking-off the build process for the official Spinnaker release.  The build process should look for the latest branch version, find if there are any changes between the last sementic tag and if so, we will need to cut a new release for all components of Spinnaker.
+The automated will be responsible for kicking-off the build process for the official Spinnaker release.  The build process should look for the latest branch version, find if there are any changes between the last semantic tag and if so, we will need to cut a new release for all components of Spinnaker.
 
 ## Release Notes
 
@@ -43,7 +43,7 @@ These dependencies are defined as services that are not created or actively deve
 
 ## Publishing
 
-These new release candidate release should be placed in a new repository under the `unstable` target in the Debian repository until it’s ready to be promoted, see the section +Spinnaker Release Process Technical Design Document: Testing below for more details.  
+This new release candidate release should be placed in a new repository under the `unstable` target in the Debian repository until it’s ready to be promoted, see the section +Spinnaker Release Process Technical Design Document: Testing below for more details.  
 
 Currently spinnaker packages are published to `bintray.com/spinnaker/debians` but we suggest that publishing to a new repo would reduce confusion.   We suggest that the repo be named: `bintray.com/spinnaker/deb-releases` .
 
@@ -73,7 +73,7 @@ Once we have a release candidate, we’ll want to run a series of integration te
 
 ## Configure a Spinnaker Instance
 
-We will stand up and configure a Spinnaker instance.  We can leverage the existing packer templates that exist for GCP and extend them to other cloud environments.  In the future we hope that Halyard will be used to deploy and configure the instances.
+We will stand up and configure a Spinnaker instance.  We can leverage the existing packer templates that exist for GCP and extend them to other cloud environments.  In the future we hope that (Halyard)[https://github.com/spinnaker/halyard] will be used to deploy and configure the instances.
 
 ## Run Integration Tests
 
