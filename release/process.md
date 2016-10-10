@@ -73,7 +73,7 @@ Once we have a release candidate, we’ll want to run a series of integration te
 
 ## Configure a Spinnaker Instance
 
-We will stand up and configure a Spinnaker instance.  We can leverage the existing packer templates that exist for GCP and extend them to other cloud environments.  In the future we hope that (Halyard)[https://github.com/spinnaker/halyard] will be used to deploy and configure the instances.
+We will stand up and configure a Spinnaker instance.  We can leverage the existing packer templates that exist for GCP and extend them to other cloud environments.  In the future we hope that (Halyard)[https://github.com/spinnaker/halyard]s will be used to deploy and configure the instances.
 
 ## Run Integration Tests
 
